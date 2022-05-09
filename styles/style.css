@@ -1,27 +1,28 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
-*{
+* {
     margin: 0;
     padding: 0;
- }
+}
 
-header, footer{
-                    height: 100px;
-                    min-width: 100%;
-              } 
+header,
+footer {
+    height: 100px;
+    min-width: 100%;
+}
 
-.nav-link{
-            text-shadow: 0 0 5px gray;
-        }
+.nav-link {
+    text-shadow: 0 0 5px gray;
+}
 
-#contents{
+#about {
     position: fixed;
 }
 
 /* body{
     overflow-y: auto;
 } */
-        
+
 /* .about{
     background-color: rgb(41, 48, 46);
     width: 400px;
@@ -31,13 +32,25 @@ header, footer{
 
 }         */
 
-.container>.row #fixed{
-        min-width: 100%;
-        height: 625px;
+.container>.row #fixed {
+    height: 610px;
 }
 
-.content{
-        overflow-x: hidden;
-        overflow-y: auto;
-        margin-left: 40%;
+.content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 380px;
+    padding-left: 2%;
+}
+
+@media(max-width:1439px) {}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+}
+
+.banner>.offcanvas{
+        z-index: 100;    
 }
