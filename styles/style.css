@@ -11,6 +11,10 @@ footer {
     min-width: 100%;
 }
 
+body{
+    background-color: rgba(25,25,35,255);
+}
+
 .nav-link {
     text-shadow: 0 0 5px gray;
 }
@@ -19,18 +23,13 @@ footer {
     position: fixed;
 }
 
-/* body{
-    overflow-y: auto;
-} */
+#aboutbtn{
+    display: none;
+}
 
-/* .about{
-    background-color: rgb(41, 48, 46);
-    width: 400px;
-    position: fixed;
-    left: 0;
-    top: 100;
-
-}         */
+aside>header{
+    width: 100%;
+}
 
 .container>.row #fixed {
     height: 610px;
@@ -40,17 +39,39 @@ footer {
     overflow-x: hidden;
     overflow-y: auto;
     margin-left: 380px;
-    padding-left: 2%;
+    padding-left: 3%;
+    padding-right: 2%;
 }
 
-@media(max-width:1439px) {}
 
-.banner::after{
+/* Side Bar Menu Media */
+@media(max-width:1439px) {
+            #about{
+                display: none;
+            }
+            #aboutbtn{
+                display: inline-block;
+            }
+            .content{
+                margin-left: 0;
+                width: 100%;
+            }
+
+}
+
+@media(max-width:767px){
+    .offcanvas{
+        width: 85%;
+    }
+}
+
+/* Side Bar Menu */
+.sidebar::after{
     content: "";
     position: absolute;
     z-index: 1;
 }
 
-.banner>.offcanvas{
+.sidebar>.offcanvas{
         z-index: 100;    
 }
