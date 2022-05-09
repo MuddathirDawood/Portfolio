@@ -75,3 +75,7 @@ aside>header{
 .sidebar>.offcanvas{
         z-index: 100;    
 }
+
+.offcanvas{
+    background-color: rgba(32,32,42,255);
+}
