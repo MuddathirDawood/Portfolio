@@ -177,3 +177,40 @@ aside>footer a:hover{
           color: white;
           text-shadow: 0 0 2px white;
 }
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.banner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.901),rgba(128, 128, 128, 0.801),rgba(0, 0, 0, 0.901));
+  z-index: 1;
+}
+
+.banner img{
+    z-index: 50;
+}
+
+.text {
+  font-family: Arial;
+  font-size: 2em;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
+  margin: 0;
+  position: absolute;
+}
