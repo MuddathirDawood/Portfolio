@@ -392,8 +392,27 @@ aside li{
   font-family: 'Poppins', sans-serif;
 }
 
+
+
+
+/* Extras */
 h2{
   font-size: 25px;
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8C8C8E;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc107;
 }
