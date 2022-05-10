@@ -160,3 +160,20 @@ h5{
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
+
+aside>footer>.container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+aside>footer i{
+        margin-left: 15px;
+        color: #8C8C8E;
+}
+
+aside>footer a:hover{
+          color: white;
+          text-shadow: 0 0 2px white;
+}
