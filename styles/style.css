@@ -6,7 +6,7 @@
 * {
     margin: 0;
     padding: 0;
-}
+  }
 
 header,
 footer {
@@ -105,60 +105,58 @@ aside>header>p{
 
 /* Circle Progress Bar */
 
-  
-  .circle-wrap {
-    margin: 150px auto;
-    width: 150px;
-    height: 150px;
-    background: #fefcff;
-    border-radius: 50%;
-    border: 2px solid #000000;
-  }
+svg{
+  width: 30px;
+  height: 50px;    
+  transform: rotate(-90deg);
+  overflow: initial;
+} 
 
-  .circle-wrap .circle .mask,
-  .circle-wrap .circle .fill {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    border-radius: 50%;
-  }
-  
-  .mask .fill {
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #ffc107;
-  }
-  
-  .circle-wrap .circle .mask {
-    clip: rect(0px, 150px, 150px, 75px);
-  }
-  
-  .mask.full,
-  .circle .fill {
-    animation: fill ease-in-out 3s;
-    transform: rotate(180deg);
-  }
-  
-  @keyframes fill{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(180deg);
-    }
-  }
+circle{
+  stroke-width:10px;
+  fill:none;    
+}
+circle:nth-child(1){ stroke: #fff }
+circle:nth-child(2){
+  stroke: #ffc107; 
+  z-index: 1;    
+}
 
-  .circle-wrap .inside-circle {
-  width: 122px;
-  height: 122px;
-  border-radius: 50%;
-  background: #20202a;
-  line-height: 120px;
+.circle_box{
+  font-size: 13px;
+  color: #fff;
   text-align: center;
-  margin-top: 14px;
-  margin-left: 14px;
-  color: #bababf;
+}
+.circle_box div{
+  position: relative;
+}
+.circle_box span{
   position: absolute;
-  z-index: 100;
-  font-weight: 700;
-  font-size: 2em;
+  left: 0;
+  margin-left: 110px;
+  color: #fff;
+  font-size: 15px;
+}
+  
+strong{
+  left: -10;
+  margin-right: 25px;
+}
+
+/* About */
+
+.container-fluid{
+    padding: 30px 0 15px;
+}
+
+.container-fluid>.row .col-12{
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+}
+
+h5{
+  color: #8C8C8E;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
 }
