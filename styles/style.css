@@ -2,6 +2,7 @@
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500&family=PT+Sans+Narrow:wght@400;700&family=Poppins&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 * {
     margin: 0;
@@ -199,18 +200,32 @@ aside>footer a:hover{
   width: 100%;
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.901),rgba(128, 128, 128, 0.801),rgba(0, 0, 0, 0.901));
-  z-index: 1;
 }
 
-.banner img{
-    z-index: 50;
+.banner div h2{
+    color: #ffc107;
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    font-weight: bolder;
 }
 
-.text {
-  font-family: Arial;
-  font-size: 2em;
-  color: white;
-  text-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
-  margin: 0;
-  position: absolute;
+#typewriter{
+    display: inline-flex;
+    font-size: 16px;
+    font-family: 'Courier Prime', monospace;
+}
+
+#typewriter a{
+  text-decoration: none;
+  color: #ffc107;
+}
+
+#typewriter i{
+  color: #ffc107;
+}
+
+@media(max-width:767px){
+          .banner img{
+            display: none;
+          }
 }
