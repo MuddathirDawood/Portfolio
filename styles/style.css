@@ -71,6 +71,7 @@ aside>header>p{
     margin-left: 380px;
     padding-left: 3%;
     padding-right: 2%;
+    margin-bottom: 19px;
 }
 
 
@@ -671,6 +672,21 @@ form .col-8{
    font-weight: bold;
 }
 
+/* Footer */
+
+footer{
+  background-color: #2c2c38;
+  height: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 30px 7px;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  color: #868887;
+}
+
 /* Extras */
 h2{
   font-size: 25px;
@@ -691,4 +707,9 @@ h2{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ffc107;
+}
+
+#about, #history, #testimonial, #projects{
+  scroll-behavior: smooth;
+  scroll-margin-block-start: 120px;
 }
