@@ -440,10 +440,15 @@
               <div class="container">
                 <h2 class="mb-3">Projects</h2>
                 <div class="projects-container">
-                    <img data-bs-toggle="modal" data-bs-target="#Project1" src="/images/Project1.png" width="600px" height="600px">
-                    <img data-bs-toggle="modal" data-bs-target="#Project2" src="https://picsum.photos/600/900?random=2" />
-                    <img data-bs-toggle="modal" data-bs-target="#Project3" src="https://picsum.photos/600/800?random=3" />
-                    <img data-bs-toggle="modal" data-bs-target="#Project4" src="https://picsum.photos/400/750?random=4" />
+                  <div class="PContain">
+                    <img data-bs-toggle="modal" data-bs-target="#Project1" src="/images/Project1.png" class="PImage"/>
+                    <div class="POverlay">
+                      <div class="PText">Bootstrap Page Exercise <br><br><a data-bs-toggle="modal" data-bs-target="#Project1" class="ModalLink">Click Here to View More⪢</a></div>
+                    </div>
+                  </div>
+                    <img data-bs-toggle="modal" data-bs-target="#Project2" src="/images/Project2.png" />
+                    <img data-bs-toggle="modal" data-bs-target="#Project3" src="/images/Project3.png" />
+                    <img data-bs-toggle="modal" data-bs-target="#Project4" src="/images/Project4.png" />
                 </div>
               </div> 
             </section>
@@ -491,7 +496,45 @@
         </div>
       </div>
     </div>
-  </div>        
+  </div>
+  
+  <!-- Modal1 -->
+  <div class="modal fade" id="Project2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Project2Label">Project 2</h5>
+          <button type="button" class="btn-close text-warning" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <img class="img-fluid" src="images/Project2.png" />
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>Project 2</h4>
+                    <p>Name: flexexample</p>
+                    <p>HTML5, CSS3 was used to create the project</p>
+                    <p>This project is the combination of HTML5 and CSS3 where we used flex boxes for the first time</p>
+                    <p>Click On the icons to Move to The Git Repository or Web Link ↓</p>
+                    <a href="https://github.com/MuddathirDawood/flexExamples" target="blank">
+                           <img src="./images/Git-icon-black.png" width="80px" height="80px"  class="git">
+                       </a>
+                       <a href="https://muddathir-dawood-flexexamples.netlify.app/" target="blank">
+                           <img src="./images/link-icon.png" alt="link" 
+                               width="80px" height="80px" class="netlify">
+                       </a>    
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>   
 
   </main>
   <script src="script/java.js"></script>
