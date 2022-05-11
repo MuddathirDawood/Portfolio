@@ -432,7 +432,42 @@ aside ul{
     font-size: 12px;
 }
 
+#cardimg{
+  width: 65px;
+  height: 75px;
+  position: absolute;
+  left: 350px;
+  top: -25px;
+  z-index: 51;
+  border-radius: 100%;
+  border: 2px solid #8C8C8E;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
 
+/* Projects */
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+} 
+
+.projects-container img{
+max-height: 400px;
+max-width: 100%;
+flex-grow: 1;
+object-fit: cover;
+} 
+
+.modal-dialog{
+      min-width: 75%;
+}
+
+.modal-content{
+  background-color: #2c2c38;
+  color: #fff;
+}
 
 /* Extras */
 h2{
