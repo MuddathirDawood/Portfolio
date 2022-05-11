@@ -388,7 +388,7 @@
                     <div class="row">
                       <div class="col-lg-6 pt-4">
                         <div class="card">
-                          <img src="./images/Jared (2).jpg" alt="" id="cardimg">
+                          <img src="./images/Jared (2).jpg" alt="Jared Isaacs" id="cardimg">
                           <div class="card-body">
                             <h5 class="card-title">Jared Isaacs</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Colleague</h6>
@@ -399,7 +399,7 @@
                       </div>
                       <div class="col-lg-6 pt-4">
                         <div class="card">
-                          <img src="./images/Daniel (3).jpg" alt="" id="cardimg">
+                          <img src="./images/Daniel (3).jpg" alt="Daniel Fredericks" id="cardimg">
                           <div class="card-body">
                             <h5 class="card-title">Daniel Fredericks</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Colleague</h6>
@@ -413,11 +413,13 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-lg-6 pt-4">
-                        <div class="card">
+                        <div class="card" style="overflow-y: scroll;">
+                          <img src="/images/joel2.jpg" alt="Joel Mukanya" id="cardimg">
                           <div class="card-body">
                             <h5 class="card-title">Joel Mukanya</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Lecturer</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Coding Lecturer</h6>
+                            <p class="card-text">Muddathir is a very creative, well-behaved student, he enjoys working with her classmates and does well working on his project.
+                              He has learned many new tricks for Web Development. I am quite happy with the effort he puts into his work. It's a pleasure to see his projects which he worked on so far. I recommend him</p>
                           </div>
                         </div>
                       </div>
@@ -441,32 +443,82 @@
                 <h2 class="mb-3">Projects</h2>
                 <div class="projects-container">
                   <div class="PContain">
-                    <img data-bs-toggle="modal" data-bs-target="#Project1" src="/images/Project1.png" class="PImage"/>
+                    <img src="/images/Project1.png" class="PImage"/>
                     <div class="POverlay">
-                      <div class="PText">Bootstrap Page Exercise <br><br><a data-bs-toggle="modal" data-bs-target="#Project1" class="ModalLink">Click Here to View More⪢</a></div>
+                      <div class="PText">Bootstrap Page Exercise<br><a data-bs-toggle="modal" data-bs-target="#Project1" class="ModalLink">Click Here to View More⪢</a></div>
                     </div>
                   </div>
-                    <img data-bs-toggle="modal" data-bs-target="#Project2" src="/images/Project2.png" />
-                    <img data-bs-toggle="modal" data-bs-target="#Project3" src="/images/Project3.png" />
-                    <img data-bs-toggle="modal" data-bs-target="#Project4" src="/images/Project4.png" />
+                  <div class="PContain">
+                    <img src="/images/Project2.png" class="PImage"/>
+                    <div class="POverlay">
+                      <div class="PText">Flex Examples<br><a data-bs-toggle="modal" data-bs-target="#Project2" class="ModalLink">Click Here to View More⪢</a></div>
+                    </div>
+                  </div>
+                  <div class="PContain">
+                    <img src="/images/Project3.png" class="PImage"/>
+                    <div class="POverlay">
+                      <div class="PText">Website<br><a data-bs-toggle="modal" data-bs-target="#Project3" class="ModalLink">Click Here to View More⪢</a></div>
+                    </div>
+                  </div>
+                  <div class="PContain">
+                    <img src="/images/Project4.png" class="PImage"/>
+                    <div class="POverlay">
+                      <div class="PText">Calculator<br><a data-bs-toggle="modal" data-bs-target="#Project4" class="ModalLink">Click Here to View More⪢</a></div>
+                    </div>
+                  </div>
                 </div>
               </div> 
             </section>
             <hr>
+            <!-- Contact -->
+            <h2 class="h2work">Contact Me</h2>
+            <div class="container formC mt-2 p-4 border-danger border-5 text-center">
+
+              <form action="https://formspree.io/f/xrgjrpnl" method="post">
+                  <!-- Name -->
+                  <div class="row my-2 w-100 justify-content-center">         
+                      <div class="col-8">
+                          <input type="text" placeholder="Name" class="form-control" id="name" name="name">
+                      </div>
+                  </div>
+                  <!-- Email -->
+                  <div class="row my-2 w-100 justify-content-center">                 
+                      <div class="col-8">
+                          <input type="text" placeholder="Email" class="form-control" id="surname" name="surname">
+                      </div>
+                  </div>
+                  <!-- Message -->
+                  <div class="row my-2 w-100 justify-content-center">                    
+                      <div class="col-8 form-floating">
+                          <textarea name="message" placeholder="Message" id="message" class="h-100 w-100">
+                          </textarea>
+                      </div>
+                  </div>
+                  <!-- Submit -->
+                  <div class="row my-2 w-75 mb-4 justify-content-center">
+                      <label class="col-md-6 col-form-label-lg"></label>
+                      <div class="col-6 justify-content-end">
+                          <input type="submit" value="Submit"
+                          class="btn btn-outline-warning w-100">
+                      </div>
+                  </div>
+      
+              </form>
+          </div>
+          <hr>
             </div>  
           </div>
         </div>
 
 
 
-
+<!-- Modals -->
   <!-- Modal1 -->
   <div class="modal fade" id="Project1" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Project1Label">Project 1</h5>
-          <button type="button" class="btn-close text-warning" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <div class="container">
@@ -492,19 +544,18 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
   
-  <!-- Modal1 -->
+  <!-- Modal2 -->
   <div class="modal fade" id="Project2" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Project2Label">Project 2</h5>
-          <button type="button" class="btn-close text-warning" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <div class="container">
@@ -530,11 +581,85 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-  </div>   
+  </div>
+  
+  <!-- Modal3 -->
+  <div class="modal fade" id="Project3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Project3Label">Project 3</h5>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <img class="img-fluid" src="images/Project3.png" />
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>Project 3</h4>
+                    <p>Name: website</p>
+                    <p>HTML5 was used to create the project</p>
+                    <p>This project is the combination of HTML5 elements that we learnt</p>
+                    <p>Click On the icons to Move to The Git Repository or Web Link ↓</p>
+                    <a href=https://github.com/MuddathirDawood/website" target="blank">
+                           <img src="./images/Git-icon-black.png" width="80px" height="80px"  class="git">
+                       </a>
+                       <a href="https://muddathir-website.netlify.app/" target="blank">
+                           <img src="./images/link-icon.png" alt="link" 
+                               width="80px" height="80px" class="netlify">
+                       </a>    
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal4 -->
+  <div class="modal fade" id="Project4" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Project4Label">Project 4</h5>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <img class="img-fluid" src="images/Project4.png" />
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>Project 4</h4>
+                    <p>Name: calculator</p>
+                    <p>HTML5, CSS3 was used to create the project</p>
+                    <p>This project has CSS3 and HTML5 but has no funtionality yet</p>
+                    <p>Click On the icons to Move to The Git Repository or Web Link ↓</p>
+                    <a href="https://github.com/MuddathirDawood/website" target="blank">
+                           <img src="./images/Git-icon-black.png" width="80px" height="80px"  class="git">
+                       </a>
+                       <a href="https://muddathir-website.netlify.app/" target="blank">
+                           <img src="./images/link-icon.png" alt="link" 
+                               width="80px" height="80px" class="netlify">
+                       </a>    
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>  
 
   </main>
   <script src="script/java.js"></script>
