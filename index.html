@@ -82,9 +82,12 @@
                       <circle cx="10" cy="10" r="55" />
                       <circle cx="10" cy="10" r="55" />
                   </svg>
-                  <span>100%</span>
-              </div>
-              <strong>English</strong>
+                  <div class="number">
+                    <h5>100%</h5>
+                  </div>
+                  <div class="title">
+                    <strong>English</strong>
+                  </div>
 
           </div>
           </div>
@@ -181,9 +184,9 @@
   <main>
     <div class="container bg-light mt-4 mx-3">
       <div class="row" style="background-color: rgba(25,25,35,355);">
+            <!-- About -->
         <div class="col-md-3 bg-dark text-light px-0" id="about"
         style="background-color: rgba(32,32,42,255);">
-        <!-- About -->
           <aside id="fixed">
             <header style="background-color: rgb(40, 40, 51);">
             <img src="./images/Logo'.png" alt="" width="70px" height="70px">
@@ -244,9 +247,12 @@
                         <circle cx="10" cy="10" r="55" />
                         <circle cx="10" cy="10" r="55" />
                     </svg>
-                    <span>100%</span>
-                </div>
-                <strong>English</strong>
+                    <div class="number">
+                      <h5>100%</h5>
+                    </div>
+                    <div class="title">
+                      <strong>English</strong>
+                    </div>
 
             </div>
             </div>
@@ -380,7 +386,7 @@
                 <div class="carousel-inner pb-5">
                   <div class="carousel-item active">
                     <div class="row">
-                      <div class="col-6 pt-4">
+                      <div class="col-lg-6 pt-4">
                         <div class="card">
                           <img src="./images/Jared (2).jpg" alt="" id="cardimg">
                           <div class="card-body">
@@ -391,7 +397,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-6 pt-4">
+                      <div class="col-lg-6 pt-4">
                         <div class="card">
                           <img src="./images/Daniel (3).jpg" alt="" id="cardimg">
                           <div class="card-body">
@@ -406,7 +412,7 @@
                   </div>
                   <div class="carousel-item">
                     <div class="row">
-                      <div class="col-6 pt-4">
+                      <div class="col-lg-6 pt-4">
                         <div class="card">
                           <div class="card-body">
                             <h5 class="card-title">Joel Mukanya</h5>
@@ -415,7 +421,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-6 pt-4">
+                      <div class="col-lg-6 pt-4">
                         <div class="card">
                           <div class="card-body">
                             <h5 class="card-title">Hannah Dalwai</h5>
@@ -434,14 +440,14 @@
               <div class="container">
                 <h2 class="mb-3">Projects</h2>
                 <div class="projects-container">
-                    <img data-bs-toggle="modal" data-bs-target="#Project1" src="https://picsum.photos/600?random=1" />
+                    <img data-bs-toggle="modal" data-bs-target="#Project1" src="/images/Project1.png" width="600px" height="600px">
                     <img data-bs-toggle="modal" data-bs-target="#Project2" src="https://picsum.photos/600/900?random=2" />
                     <img data-bs-toggle="modal" data-bs-target="#Project3" src="https://picsum.photos/600/800?random=3" />
                     <img data-bs-toggle="modal" data-bs-target="#Project4" src="https://picsum.photos/400/750?random=4" />
-                    <img data-bs-toggle="modal" data-bs-target="#Project5" src="https://picsum.photos/400?random=5" />
                 </div>
               </div> 
-          </section>
+            </section>
+            <hr>
             </div>  
           </div>
         </div>
@@ -455,26 +461,33 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Project1Label">Project 1</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close text-warning" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <div class="container">
               <div class="row">
-                  <div class="col-md-6">
-                    <img class="img-fluid" src="https://picsum.photos/600?random=1" />
+                  <div class="col-lg-6">
+                    <img class="img-fluid" src="images/Project1.png" />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <h4>Project 1</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ipsam maiores! Quidem expedita dicta quisquam nobis ab illo, ipsum molestias qui ratione aut excepturi officiis labore numquam perferendis, consequuntur iste.
-                    </p>
+                    <p>Name: bootstrap_page_exercise</p>
+                    <p>HTML5, CSS3 and Bootstrap was used to create the project</p>
+                    <p>This project is the combination of HTML5 and CSS3, it consists mostly of Bootstrap</p>
+                    <p>Click On the icons to Move to The Git Repository or Web Link ↓</p>
+                    <a href="https://github.com/MuddathirDawood/bootstrap_page_exercise" target="blank">
+                           <img src="./images/Git-icon-black.png" width="80px" height="80px"  class="git">
+                       </a>
+                       <a href="https://bootstrap-page-exercise.netlify.app/" target="blank">
+                           <img src="./images/link-icon.png" alt="link" 
+                               width="80px" height="80px" class="netlify">
+                       </a>    
                   </div>
               </div>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>

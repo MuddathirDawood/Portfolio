@@ -201,6 +201,15 @@ aside ul{
     font-size: 14px;
 }
 
+.number{
+  top: -40px;
+  left: -14px;
+}
+
+.title{
+top: -45px;
+}
+
 /* Banner */
 .banner {
   position: relative;
@@ -445,6 +454,33 @@ aside ul{
   object-fit: cover;
 }
 
+@media(min-width:426px) and (max-width:768px){
+              .carousel{
+                margin-left: 17%;
+              }
+              .carousel-indicators{
+                margin-right: 200px;
+              }
+}
+
+@media(min-width:376px) and (max-width:426px){
+          .card{
+            width: 400px;
+          }
+          #cardimg{
+            left: 290px;
+          }
+}
+
+@media(max-width:376px){
+          .card{
+            width: 360px;
+          }
+          #cardimg{
+            left: 250px;
+          }
+}
+
 /* Projects */
 .projects-container{
   display: flex;
@@ -453,7 +489,7 @@ aside ul{
   justify-content: space-between;
 } 
 
-.projects-container img{
+.projects-container img, .modal-body img{
 max-height: 400px;
 max-width: 100%;
 flex-grow: 1;
@@ -468,6 +504,45 @@ object-fit: cover;
   background-color: #2c2c38;
   color: #fff;
 }
+
+.git{
+  margin-left: 75px;
+  margin-top: 10px;
+  transition: transform 1s ease-in-out;
+}
+   
+.git:hover{
+      transform: scale(1.1);
+}           
+
+.netlify{
+  margin-left: 125px;
+  margin-top: 10px;
+  transition: transform 1s ease-in-out;
+}
+
+.netlify:hover{
+       transform: scale(1.1);
+    }
+
+@media(max-width: 1024px){
+      .git{
+            width: 75px;
+            height: 75px;
+            margin-left: 50px;
+          }
+
+      .netlify{
+                width: 75px;
+                height: 75px;
+                margin-left: 75px;
+              }    
+
+      }
+
+.closemodal{
+      color: #ffc107;
+}      
 
 /* Extras */
 h2{
