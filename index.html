@@ -19,12 +19,12 @@
     <div class="offcanvas offcanvas-start text-light" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
       <div class="offcanvas-header bg">
         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Digital Portfolio</h5>
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas"><i class="bi bi-three-dots-vertical"></i></button>
+        <button type="button" class="btn btn-outline-secondary me-5" data-bs-dismiss="offcanvas"><i class="bi bi-three-dots-vertical"></i></button>
       </div>
       <div class="offcanvas-body overflow-hidden">
         <aside id="fixed">
           <header style="background-color: rgb(40, 40, 51);">
-          <img src="./images/Logo'.png" alt="" width="70px" height="70px">
+          <img src="./images/Logo'.png" alt="" width="70px" height="70px" class="mt-5">
           <h5>Muddathir Dawood</h5>
           <p class="text-secondary">Aspiring Web Developer</p>
         </header>
@@ -414,7 +414,7 @@
                     <div class="row">
                       <div class="col-lg-6 pt-4">
                         <div class="card" style="overflow-y: scroll;">
-                          <img src="/images/joel2.jpg" alt="Joel Mukanya" id="cardimg">
+                          <img src="/images/joel2.jpg" alt="Joel Mukanya" id="joelimg">
                           <div class="card-body">
                             <h5 class="card-title">Joel Mukanya</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Coding Lecturer</h6>
@@ -477,29 +477,27 @@
               <form action="https://formspree.io/f/xrgjrpnl" method="post">
                   <!-- Name -->
                   <div class="row my-2 w-100 justify-content-center">         
-                      <div class="col-8">
-                          <input type="text" placeholder="Name" class="form-control" id="name" name="name">
+                      <div class="col-8 d-flex align-items-center">
+                        <i class="bi bi-person-fill"></i><input type="text" placeholder="Name" class="form-control" id="name" name="name">
                       </div>
                   </div>
                   <!-- Email -->
-                  <div class="row my-2 w-100 justify-content-center">                 
-                      <div class="col-8">
-                          <input type="text" placeholder="Email" class="form-control" id="surname" name="surname">
+                  <div class="row my-2 w-100 justify-content-center py-3">                 
+                      <div class="col-8 d-flex align-items-center">
+                        <i class="bi bi-at"></i><input type="text" placeholder="Email" class="form-control" id="surname" name="surname">
                       </div>
                   </div>
                   <!-- Message -->
                   <div class="row my-2 w-100 justify-content-center">                    
-                      <div class="col-8 form-floating">
-                          <textarea name="message" placeholder="Message" id="message" class="h-100 w-100">
-                          </textarea>
+                      <div class="col-8 d-flex align-items-center">
+                        <i class="bi bi-envelope"></i><textarea name="message" placeholder="Message" id="message"></textarea>
                       </div>
                   </div>
                   <!-- Submit -->
-                  <div class="row my-2 w-75 mb-4 justify-content-center">
-                      <label class="col-md-6 col-form-label-lg"></label>
-                      <div class="col-6 justify-content-end">
-                          <input type="submit" value="Submit"
-                          class="btn btn-outline-warning w-100">
+                  <div class="row my-2 w-75 mb-4 pt-4">
+                      <div class="col-6">
+                          <input type="submit" value="Send Message"
+                          class="btn btn-warning btnsubmit d-flex justify-content-center">
                       </div>
                   </div>
       

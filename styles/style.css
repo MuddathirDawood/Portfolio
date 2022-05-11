@@ -13,6 +13,12 @@ header,
 footer {
     height: 100px;
     min-width: 100%;
+    padding-top: 10px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
 }
 
 body{
@@ -439,13 +445,24 @@ top: -45px;
 
 #cardimg{
   width: 65px;
-  height: 75px;
+  height: 65px;
   position: absolute;
   left: 350px;
   top: -25px;
   z-index: 51;
   border-radius: 100%;
-  border: 2px solid #8C8C8E;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+#joelimg{
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 350px;
+  top: 0;
+  z-index: 51;
+  border-radius: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
@@ -535,6 +552,15 @@ top: -45px;
 
       }
 
+@media(max-width:427px){
+          .ModalLink{
+            font-size: 10px !important;
+          }
+          .PText{
+            font-size: 15px !important;
+          }
+}      
+
 .closemodal{
       color: #ffc107;
 }     
@@ -601,12 +627,49 @@ top: -45px;
 
 textarea{
       background-color: #24242f;
+      border: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      height: 81px;
+      padding: 15px 15px 2px;
+      width: 100%;
 }
 
 input, textarea{
   color: #868887;
 }
 
+form input[type=text]{
+      border-radius: 0%;
+      background-color: #24242f;
+      border: 0;
+      height: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+}
+
+form i{
+  width: 50px;
+  height: 100%;
+  padding-top: 12px;
+  background-color: #191920;
+  color: #868887;
+  font-size: 15px;
+}
+form .col-8{
+  width: 100%;
+}
+
+.btnsubmit{
+   border-radius: 0;
+   left: 0;
+   display: flex;
+   width: 177px;
+   height: 45px;
+   font-size: 13px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+}
 
 /* Extras */
 h2{
