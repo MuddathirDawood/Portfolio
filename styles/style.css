@@ -413,6 +413,24 @@ aside ul{
   font-family: 'Poppins', sans-serif;
 }
 
+/* Testimonial */
+.card{
+  width: 450px;
+  height: 250px;
+  padding: 30px;
+  background-color: #2c2c38;
+  font-family: 'Poppins', sans-serif;
+  color: #8C8C8E;
+}
+
+.card-title{
+    color: white;
+    margin: 5px 0 15px;
+}
+
+.card-subtitle{
+    font-size: 12px;
+}
 
 
 
