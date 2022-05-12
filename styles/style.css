@@ -42,6 +42,12 @@ nav{
     display: none;
 }
 
+@media(min-width:769px){
+          #aboutbtn{
+            margin-right: 15%;
+          }
+}
+
 aside>header{
     padding: 30px;
     margin: auto;
