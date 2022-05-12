@@ -89,8 +89,17 @@ aside>header>p{
     background-color: rgba(32,32,42,255);
 }
 
+.offcanvas-body{
+  min-height: 100vh;
+}
+
 .offcanvas aside .col-5{
           font-size: 13px;
+}
+
+.offcanvas footer{
+  height: 40px;
+  padding-top: 7px;
 }
 
 @media(max-width:1439px) {
@@ -103,7 +112,7 @@ aside>header>p{
   .content{               /*All Other Content*/
       margin-left: 0;
       width: 100%;
-  }
+      }
 
 }
 
@@ -111,6 +120,11 @@ aside>header>p{
 .offcanvas{
 width: 85%;
 }
+}
+
+@media(min-width:427px) and (max-width:1025px){
+
+
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Circle Progress Bar ///////////////////////////////////////////////////////*/
@@ -184,13 +198,12 @@ aside>footer i{
 }
 
 aside>footer a{
-      font-size: 15px;
+      font-size: 16px;
       color: #7e7e81;
 }
 
-aside>footer a:hover{
-          color: #ffc107;
-          text-shadow: 0 0 1px white;
+aside>footer i:hover{
+      color: #ffc107;
 }
 
 aside .col-5{
