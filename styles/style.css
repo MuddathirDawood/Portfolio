@@ -288,12 +288,14 @@ top: -45px;
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Bio ////////////////////////////////////////////////////////////////////////*/
 .bio{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ 
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
+}
+
+.bio ul{
+  list-style: none;
+  margin-left: 80px;
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Work & Education ///////////////////////////////////////////////////////////////////*/
@@ -523,7 +525,7 @@ top: -45px;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-} 
+}
 
 .projects-container img, .modal-body img{
     max-height: 400px;
