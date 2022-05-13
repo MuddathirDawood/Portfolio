@@ -231,8 +231,14 @@ aside li{
 }
 
 aside ul{
+    padding-top: 5px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+}
+
+aside ul>li::before{
+  content: '✓ ';
+  color: #ffc107;
 }
 
 .number{
@@ -353,6 +359,7 @@ top: -45px;
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-left: 0px;
 }
 
 .banner:after {
@@ -401,7 +408,13 @@ top: -45px;
 }
 
 .bio ul{
+  list-style: none;
   margin-left: 80px;
+}
+
+.bio ul>li::before{
+  content: '✓ ';
+  color: #ffc107;
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Work & Education ///////////////////////////////////////////////////////////////////*/
