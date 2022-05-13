@@ -409,7 +409,7 @@ top: -45px;
 
 .bio ul{
   list-style: none;
-  margin-left: 80px;
+  margin-left: 10px;
 }
 
 .bio ul>li::before{
@@ -661,8 +661,12 @@ top: -45px;
   color: #fff;
 }
 
+.modal-body a{
+  color: #2c2c38;
+}
+
 .git{
-  margin-left: 75px;
+  margin-left: 80px;
   margin-top: 10px;
   transition: transform 1s ease-in-out;
 }
