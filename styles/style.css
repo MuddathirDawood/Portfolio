@@ -244,6 +244,107 @@ aside ul{
 top: -45px;
 }
 
+.progresstext{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.progress-bar{
+  animation: progress 1500ms ease-in 1;
+}
+
+@keyframes progress{
+    from{
+      width: 0%;
+    }
+}
+
+@property --num1 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num5 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+#nbr {
+  counter-reset: num1 var(--num1);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr:before {
+  content: counter(num1);
+}
+
+#nbr2 {
+  counter-reset: num2 var(--num2);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr2:before {
+  content: counter(num2);
+}
+
+#nbr3 {
+  counter-reset: num3 var(--num3);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr3:before {
+  content: counter(num3);
+}
+
+#nbr4 {
+  counter-reset: num4 var(--num4);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr4:before {
+  content: counter(num4);
+}
+
+#nbr5 {
+  counter-reset: num5 var(--num5);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr5:before {
+  content: counter(num5);
+}
+
+@keyframes animate {
+  to {
+    --num1: 75;
+    --num2: 35;
+    --num3: 55;
+    --num4: 15;
+    --num5: 35;
+  }
+}
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Banner //////////////////////////////////////////////////////////////////////////*/
 .banner {
   position: relative;
@@ -291,6 +392,7 @@ top: -45px;
           }
 }
 
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Bio ////////////////////////////////////////////////////////////////////////*/
 .bio{
  
@@ -299,7 +401,6 @@ top: -45px;
 }
 
 .bio ul{
-  list-style: none;
   margin-left: 80px;
 }
 
