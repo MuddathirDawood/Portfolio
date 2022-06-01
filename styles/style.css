@@ -768,6 +768,10 @@ top: -45px;
   font-family: 'Poppins', sans-serif;
 }
 
+.modal-body .col-6{
+  display: contents;
+}
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Contact Form //////////////////////////////////////////////////////*/
 .formC{
   background-color: #2c2c38;
